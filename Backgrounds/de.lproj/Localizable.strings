@@ -1,0 +1,62 @@
+/*
+     Localizable.strings
+     Copyright 2022 SAP SE
+     
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+     
+     http://www.apache.org/licenses/LICENSE-2.0
+     
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+*/
+
+"angleSliderToolTip" = "Benutzen Sie diesen Schieberegler, um den Winkel des Farbverlaufs zu ändern. Derzeit beträgt der Winkel %@.";
+"xPositionSliderToolTip" = "Benutzen Sie diesen Schieberegler, um den Mittelpunkt des Farbverlaufs horizontal zu verschieben. Momentan befindet sich der Mittelpunkt bei %@.";
+"yPositionSliderToolTip" = "Benutzen Sie diesen Schieberegler, um den Mittelpunkt des Farbverlaufs vertikal zu verschieben. Momentan befindet sich der Mittelpunkt bei %@.";
+"logoSizeSliderToolTip" = "Benutzen Sie diesen Schieberegler, um die Größe des Logos zu ändern. Derzeit beträgt die Größe %@.";
+"xLogoPositionSliderToolTip" = "Benutzen Sie diesen Schieberegler, um das Logo horizontal zu verschieben. Momentan befindet sich das Logo bei %@.";
+"yLogoPositionSliderToolTip" = "Benutzen Sie diesen Schieberegler, um das Logo vertikal zu verschieben. Momentan befindet sich das Logo bei %@.";
+"colorWellToolTip" = "Klicken Sie hier, um eine Farbe zu wählen. Nach links oder rechts bewegen, um die Position der Farbe zu ändern. Herausziehen, um die Farbe zu löschen.";
+
+"noLogoEntry" = "Nein";
+
+"removeBackgroundEntry" = "Hintergrund löschen";
+"removeMultipleGradientEntry" = "Ausgewählte Hintergründe löschen";
+"removeAllBackgroundsEntry" = "Alle benutzerdefinierten Hintergründe löschen";
+"showPredefinedBackgroundsEntry" = "Vordefinierte Hintergründe anzeigen";
+"hidePredefinedBackgroundsEntry" = "Vordefinierte Hintergründe ausblenden";
+"headerPredefined" = "Vordefinierte Hintergründe";
+"headerUserDefined" = "Benutzerdefinierte Hintergründe";
+
+"removeBackgroundAlert" = "Ausgewählten Hintergrund löschen?";
+"removeMultipleBackgroundsAlert" = "Ausgewählte Hintergründe löschen?";
+"removeAllBackgroundsAlert" = "Alle benutzerdefinierten Hintergründe löschen?";
+"noUndoAlertText" = "Das Löschen kann nicht rückgängig gemacht werden.";
+"deleteButton" = "Löschen";
+"cancelButton" = "Abbrechen";
+
+"undoChangeGradientType" = "Art des Verlaufs ändern";
+"undoChangeGradientAngle" = "Winkel des Verlaufs ändern";
+"undoChangeGradientPosition" = "Mittelpunkt der Verlaufs verschieben";
+"undoChangeLogo" = "Logo ändern";
+"undoChangeLogoSize" = "Größe des Logos ändern";
+"undoChangeLogoPosition" = "Position des Logos ändern";
+"undoAddGradientColor" = "Farbe hinzufügen";
+"undoRemoveGradientColor" = "Farbe löschen";
+"undoChangeGradientColor" = "Farbe ändern";
+"undoMoveGradientColor" = "Farbe verschieben";
+"undoSetBackgroundForScreen" = "Hintergrund für aktuellen Bildschirm setzen";
+"undoSetBackgroundForAll" = "Hintergrund für alle Bildschirme setzen";
+"undoRearrange" = "Hintergründe neu anordnen";
+"undoChangeSelection" = "Hintergrund auswählen";
+
+"exportFileName" = "Exportierte Hintergründe.bgexport";
+"exportButton" = "Exportieren";
+"importButton" = "Importieren";
+"yesButton" = "Ja";
+"importFromFileAlert" = "Hintergründe importieren?";
