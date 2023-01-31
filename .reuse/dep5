@@ -1,0 +1,9 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: backgrounds
+Upstream-Contact: SAP Open Source Program Office ospo@sap.com
+Source: https://github.com/SAP/backgrounds
+
+Files: *
+Copyright: 2023 SAP SE or an SAP affiliate company and backgrounds contributors.
+License: Apache-2.0
+
