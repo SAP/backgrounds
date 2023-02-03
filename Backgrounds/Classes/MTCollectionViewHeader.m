@@ -30,7 +30,7 @@
 
 - (void)drawRect:(NSRect)dirtyRect
 {
-    [[NSColor colorWithCalibratedWhite:0.95 alpha:0.8] set];
+    [[[NSColor lightGrayColor] colorWithAlphaComponent:.1] set];
     NSRectFillUsingOperation(dirtyRect, NSCompositingOperationSourceOver);
 }
 

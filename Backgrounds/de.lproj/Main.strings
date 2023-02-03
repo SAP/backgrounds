@@ -52,7 +52,7 @@
 "cvh-K5-aK0.title" = "Winkel:";
 
 /* Class = "NSTextFieldCell"; title = "Please select at least two colors for the gradient, choose a gradient type and use the sliders to change the gradient's angle or position."; ObjectID = "kV9-Oe-sJl"; */
-"kV9-Oe-sJl.title" = "Bitte wählen Sie mindestens zwei Farben für den Farbverlauf, wählen sie die Art des Verlaufs und benutzen Sie die Schieberegler, um den Winkel bzw. die Position des Verlaufs zu ändern.";
+"kV9-Oe-sJl.title" = "Bitte wählen Sie mindestens zwei Farben für den Farbverlauf, wählen Sie die Art des Verlaufs und benutzen Sie die Schieberegler, um den Winkel bzw. die Position des Verlaufs zu ändern.";
 
 /* Class = "NSTextFieldCell"; title = "Horizontal position:"; ObjectID = "ubH-xe-bgQ"; */
 "ubH-xe-bgQ.title" = "Horizontale Position:";
@@ -99,6 +99,12 @@
 /* Class = "NSMenu"; title = "Window"; ObjectID = "RrS-pY-aA2"; */
 "RrS-pY-aA2.title" = "Fenster";
 
+/* Class = "NSMenu"; title = "Help"; ObjectID = "lIj-zn-2Fd"; */
+"lIj-zn-2Fd.title" = "Hilfe";
+
+/* Class = "NSMenuItem"; title = "Backgrounds on GitHub"; ObjectID = "XoR-ou-6u9"; */
+"XoR-ou-6u9.title" = "Backgrounds auf GitHub";
+
 /* Class = "NSMenuItem"; title = "Copy"; ObjectID = "UQB-Kk-NiR"; */
 "UQB-Kk-NiR.title" = "Kopieren";
 
@@ -130,10 +136,13 @@
 "sRb-Zo-yP3.title" = "Ablage";
 
 /* Class = "NSMenuItem"; title = "Export Selected…"; ObjectID = "e56-EL-j3F"; */
-"e56-EL-j3F.title" = "Ausgewählte exportieren…";
+"e56-EL-j3F.title" = "Ausgewählte exportieren …";
+
+/* Class = "NSMenuItem"; title = "Close Window"; ObjectID = "dc6-WX-Z5d"; */
+"dc6-WX-Z5d.title" = "Fenster schließen";
 
 /* Class = "NSMenuItem"; title = "Import…"; ObjectID = "jws-2z-jpc"; */
-"jws-2z-jpc.title" = "Importieren…";
+"jws-2z-jpc.title" = "Importieren …";
 
 /* Class = "NSMenuItem"; title = "Save"; ObjectID = "Iat-yb-mPK"; */
 "Iat-yb-mPK.title" = "Speichern";

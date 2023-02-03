@@ -737,6 +737,11 @@
     }
 }
 
+- (IBAction)openGitHub:(id)sender
+{
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:kMTGitHubURL]];
+}
+
 #pragma mark NSMenuValidation
 - (BOOL)validateMenuItem:(NSMenuItem *)menuItem
 {

@@ -74,6 +74,12 @@
                                                 <action selector="exportSelectedGradients:" target="Ady-hI-5gd" id="u8D-uQ-NAp"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="3fS-TU-528"/>
+                                        <menuItem title="Close Window" keyEquivalent="w" id="dc6-WX-Z5d">
+                                            <connections>
+                                                <action selector="performClose:" target="Ady-hI-5gd" id="6r6-hj-aTk"/>
+                                            </connections>
+                                        </menuItem>
                                     </items>
                                 </menu>
                             </menuItem>
@@ -141,6 +147,19 @@
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="arrangeInFront:" target="Ady-hI-5gd" id="Hgv-Dl-YWV"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Help" id="8If-2D-tOg">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Help" systemMenu="help" id="lIj-zn-2Fd">
+                                    <items>
+                                        <menuItem title="Backgrounds on GitHub" id="XoR-ou-6u9">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="openGitHub:" target="Ady-hI-5gd" id="R4I-s4-xmt"/>
                                             </connections>
                                         </menuItem>
                                     </items>
@@ -641,7 +660,11 @@ DQ
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <arrayController id="8cf-qU-kE4" userLabel="Logo Array Controller">
                     <connections>
-                        <binding destination="XfG-lQ-9wD" name="contentArray" keyPath="logoArray" id="nEN-UU-n61"/>
+                        <binding destination="XfG-lQ-9wD" name="contentArray" keyPath="logoArray" id="Wdy-Ne-e1U">
+                            <dictionary key="options">
+                                <bool key="NSValidatesImmediately" value="YES"/>
+                            </dictionary>
+                        </binding>
                     </connections>
                 </arrayController>
                 <userDefaultsController representsSharedInstance="YES" id="YzH-ZU-phG"/>

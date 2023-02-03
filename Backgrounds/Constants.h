@@ -26,6 +26,7 @@
 #define kMTSectionUserDefined               1
 #define kMTCollectionViewGapItem            @"MTCollectionViewGapItem"
 #define kMTCollectionViewHeader             @"MTCollectionViewHeader"
+#define kMTGitHubURL                        @"https://github.com/SAP/backgrounds"
 
 #define kMTDefaultsGradientAngle            @"GradientAngle"
 #define kMTDefaultsGradientColors           @"GradientColors"
