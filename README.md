@@ -14,7 +14,7 @@ In case you are the maintainer of a new SAP open source project, these are the s
 
 ***
 
-# Our new open source project
+# backgrounds
 
 ## About this project
 
