@@ -41,7 +41,7 @@ Copyright (c) 2023 SAP SE or an SAP affiliate company and backgrounds contributo
 Found a security-related issue or vulnerability and want to notify us?
 
 Please contact us at:
-[backgrounds-security@sap.com](mailto:backgrounds-security@sap.com?subject=[GitHub]%20Backgrounds%20Security%20Issue%20Report)
+[macatsap-opensource-security@sap.com](mailto:macatsap-opensource-security@sap.com?subject=[GitHub]%20Backgrounds%20Security%20Issue%20Report)
   
  # Support
 
