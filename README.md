@@ -36,13 +36,13 @@ We as members, contributors, and leaders pledge to make participation in our com
 
 Copyright (c) 2023 SAP SE or an SAP affiliate company and backgrounds contributors. Please see our [LICENSE](LICENSE) for copyright and license information. Detailed information including third-party components and their licensing/copyright information is available [via the REUSE tool](https://api.reuse.software/info/github.com/SAP/backgrounds).
   
- # Security
+ ## Security
 
 Found a security-related issue or vulnerability and want to notify us?
 
 Please contact us at:
 [macatsap-opensource-security@sap.com](mailto:macatsap-opensource-security@sap.com?subject=[GitHub]%20Backgrounds%20Security%20Issue%20Report)
   
- # Support
+ ## Support
 
 This project is 'as-is' with no support, no changes being made. You are welcome to make changes to improve it but we are not available for questions or support of any kind.
