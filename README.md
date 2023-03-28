@@ -52,11 +52,11 @@ Here you can find an example how the Backgrounds Application looks like. There a
 
 ![BackgroundsApplication](https://github.com/SAP/backgrounds/blob/main/readme_images/Backgrounds_application.png)
 
-## Feedback and Contributing
+# Feedback and Contributing
 
 This project is open to feature requests/suggestions, bug reports etc. via [GitHub issues](https://github.com/SAP/backgrounds/issues). Contribution and feedback are encouraged and always welcome. For more information about how to contribute, the project structure, as well as additional contribution information, see our [Contribution Guidelines](CONTRIBUTING.md).
 
-## Code of Conduct
+# Code of Conduct
 
 We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone. By participating in this project, you agree to abide by its [Code of Conduct](CODE_OF_CONDUCT.md) at all times.
 
