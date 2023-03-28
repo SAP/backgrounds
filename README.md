@@ -1,30 +1,58 @@
-# SAP Repository Template
+![BackgroundsBanner](https://github.com/SAP/backgrounds/blob/main/readme_images/banner_backgrounds.gif)
 
-Default templates for SAP open source repositories, including LICENSE, .reuse/dep5, Code of Conduct, etc... All repositories on github.com/SAP will be created based on this template.
+# Backgrounds
 
-## To-Do
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP/backgrounds)](https://api.reuse.software/info/github.com/SAP/backgrounds)
 
-In case you are the maintainer of a new SAP open source project, these are the steps to do with the template files:
+**Customize Your Desktop with Backgrounds**
+ 
+Do you ever feel like your desktop background is too plain and boring? Would you like to make it more eye-catching and customize it to fit your needs? With Backgrounds, you can do just that!
+ 
+Backgrounds is an app that allows you to create your own custom background for your desktop. You can choose between two gradient types—linear and radial—as well as embed your logo. You can also select from a wide range of predefined backgrounds. Every pixel of your background will be automatically calculated and optimized for your screen size. 
+ 
+So, if you're looking for a way to spruce up your desktop, Backgrounds is the perfect app for you. With Backgrounds, you can create a custom background and make your desktop look amazing. Try it today and see what you can create!
 
-- Check if the default license (Apache 2.0) also applies to your project. A license change should only be required in exceptional cases. If this is the case, please change the [license file](LICENSE).
-- Enter the correct metadata for the REUSE tool. See our [wiki page](https://wiki.wdf.sap.corp/wiki/display/ospodocs/Using+the+Reuse+Tool+of+FSFE+for+Copyright+and+License+Information) for details how to do it. You can find an initial .reuse/dep5 file to build on. Please replace the parts inside the single angle quotation marks < > by the specific information for your repository and be sure to run the REUSE tool to validate that the metadata is correct.
-- Adjust the contribution guidelines (e.g. add coding style guidelines, pull request checklists, different license if needed etc.)
-- Add information about your project to this README (name, description, requirements etc). Especially take care for the <your-project> placeholders - those ones need to be replaced with your project name. See the sections below the horizontal line and [our guidelines on our wiki page](https://wiki.wdf.sap.corp/wiki/display/ospodocs/Guidelines+for+README.md+file) what is required and recommended.
-- Remove all content in this README above and including the horizontal line ;)
+**The Backgrounds app supports the following features:**
 
-***
+🌈 Custom Background
 
-# backgrounds
+🌟 Linear or radial gradient type
 
-## About this project
+❌ No graphic skills are needed
 
-*Insert a short description of your project here...*
+🚀 Various setting options
 
-## Requirements and Setup
+⌨️ Command line for automatization
 
-*Insert a short description what is required to get your project running...*
+💻 Supports the newest macOS version
 
-## Support, Feedback, Contributing
+
+# Demo 🖥️
+
+Have a look how easy it is to create a customized icon by drag and drop. This is only one demo shown, there are still many different variations possible to create an icon.
+
+![BackgroundsBanner](https://github.com/SAP/backgrounds/blob/main/readme_images/Backgrounds_save_user_created_background.gif)
+
+
+
+
+# Documentation 📚
+
+You can find the following links also in the Wiki Page of Icons.
+
+* [Installation](https://github.com/SAP/backgrounds/wiki/Installation)
+* [Uninstallation](https://github.com/SAP/backgrounds/wiki/Uninstallation)
+* [Using Backgrounds](https://github.com/SAP/backgrounds/wiki/Using-Backgrounds)
+* [Managing Backgrounds](https://github.com/SAP/backgrounds/wiki/Managing-Backgrounds)
+* [Frequently Asked Questions](https://github.com/SAP/backgrounds/wiki/Frequently-Asked-Questions)
+
+# Example 💡
+
+Here you can find an example how the Backgrounds Application looks like. There are some predefined background, but you can make your own fancy background. The tutorial how to do that, you can find in [Using Backgrounds](https://LINK/).
+
+![BackgroundsApplication](https://github.com/SAP/backgrounds/blob/main/readme_images/Backgrounds_application.png)
+
+## Feedback and Contributing
 
 This project is open to feature requests/suggestions, bug reports etc. via [GitHub issues](https://github.com/SAP/backgrounds/issues). Contribution and feedback are encouraged and always welcome. For more information about how to contribute, the project structure, as well as additional contribution information, see our [Contribution Guidelines](CONTRIBUTING.md).
 
@@ -32,17 +60,14 @@ This project is open to feature requests/suggestions, bug reports etc. via [GitH
 
 We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone. By participating in this project, you agree to abide by its [Code of Conduct](CODE_OF_CONDUCT.md) at all times.
 
-## Licensing
+# License 🏷️
 
 Copyright (c) 2023 SAP SE or an SAP affiliate company and backgrounds contributors. Please see our [LICENSE](LICENSE) for copyright and license information. Detailed information including third-party components and their licensing/copyright information is available [via the REUSE tool](https://api.reuse.software/info/github.com/SAP/backgrounds).
-  
- ## Security
 
-Found a security-related issue or vulnerability and want to notify us?
 
-Please contact us at:
-[macatsap-opensource-security@sap.com](mailto:macatsap-opensource-security@sap.com?subject=[GitHub]%20Backgrounds%20Security%20Issue%20Report)
-  
- ## Support
+# Security 👮
+Found a security-related issue or vulnerability and want to notify us? Please contact us at 📧 [macatsap-opensource-security@sap.com](mailto:macatsap-opensource-security@sap.com?subject=[GitHub]%20Backgrounds%20Security%20Issue%20Report)
+
+# Support 🤓
 
 This project is 'as-is' with no support, no changes being made. You are welcome to make changes to improve it but we are not available for questions or support of any kind.
