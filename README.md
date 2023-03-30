@@ -48,7 +48,7 @@ You can find the following links also in the Wiki Page of Icons.
 
 # Example 💡
 
-Here you can find an example how the Backgrounds Application looks like. There are some predefined background, but you can make your own fancy background. The tutorial how to do that, you can find in [Using Backgrounds](https://LINK/).
+Here you can find an example how the Backgrounds Application looks like. There are some predefined background, but you can make your own fancy background. The tutorial how to do that, you can find in [Using Backgrounds](https://github.com/SAP/backgrounds/wiki/Using-Backgrounds).
 
 ![BackgroundsApplication](https://github.com/SAP/backgrounds/blob/main/readme_images/Backgrounds_application.png)
 
