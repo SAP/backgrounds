@@ -29,7 +29,7 @@ So, if you're looking for a way to spruce up your desktop, Backgrounds is the pe
 
 # Demo 🖥️
 
-Have a look how easy it is to create a customized background by drag and drop. This is only one demo shown, there are still many different variations possible to create a desired background.
+Have a look how easy it is to set a customized background. This is only one demo shown, there are still many different variations possible to create and set a desired background.
 
 ![BackgroundsBanner](https://github.com/SAP/backgrounds/blob/main/readme_images/Backgrounds_save_user_created_background.gif)
 
