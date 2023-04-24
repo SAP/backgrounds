@@ -29,7 +29,7 @@ So, if you're looking for a way to spruce up your desktop, Backgrounds is the pe
 
 # Demo 🖥️
 
-Have a look how easy it is to create a customized icon by drag and drop. This is only one demo shown, there are still many different variations possible to create an icon.
+Have a look how easy it is to set a customized background. This is only one demo shown, there are still many different variations possible to create and set a desired background.
 
 ![BackgroundsBanner](https://github.com/SAP/backgrounds/blob/main/readme_images/Backgrounds_save_user_created_background.gif)
 
@@ -38,7 +38,7 @@ Have a look how easy it is to create a customized icon by drag and drop. This is
 
 # Documentation 📚
 
-You can find the following links also in the Wiki Page of Icons.
+You can find the following links also in the Wiki for Backgrounds.
 
 * [Installation](https://github.com/SAP/backgrounds/wiki/Installation)
 * [Uninstallation](https://github.com/SAP/backgrounds/wiki/Uninstallation)
