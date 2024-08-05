@@ -48,7 +48,7 @@ You can find the following links also in the Wiki for Backgrounds.
 
 # Example 💡
 
-Here you can find an example how the Backgrounds Application looks like. There are some predefined background, but you can make your own fancy background. The tutorial how to do that, you can find in [Using Backgrounds](https://github.com/SAP/backgrounds/wiki/Using-Backgrounds).
+Here you can find an example how the Backgrounds application looks like. There are some predefined background, but you can make your own fancy background. The tutorial how to do that, you can find in [Using Backgrounds](https://github.com/SAP/backgrounds/wiki/Using-Backgrounds).
 
 ![BackgroundsApplication](https://github.com/SAP/backgrounds/blob/main/readme_images/Backgrounds_application.png)
 
@@ -62,7 +62,7 @@ We as members, contributors, and leaders pledge to make participation in our com
 
 # License 🏷️
 
-Copyright (c) 2023 SAP SE or an SAP affiliate company and backgrounds contributors. Please see our [LICENSE](LICENSE) for copyright and license information. Detailed information including third-party components and their licensing/copyright information is available [via the REUSE tool](https://api.reuse.software/info/github.com/SAP/backgrounds).
+Copyright (c) 2023 SAP SE or an SAP affiliate company and Backgrounds contributors. Please see our [LICENSE](LICENSE) for copyright and license information. Detailed information including third-party components and their licensing/copyright information is available [via the REUSE tool](https://api.reuse.software/info/github.com/SAP/backgrounds).
 
 
 # Security 👮
