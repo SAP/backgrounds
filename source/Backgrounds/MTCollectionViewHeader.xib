@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="22505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="header" id="c22-O7-iKe" customClass="MTCollectionViewHeader">
+            <rect key="frame" x="0.0" y="0.0" width="3000" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Cl1-dt-KfI">
+                    <rect key="frame" x="13" y="17" width="37" height="16"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="zqQ-th-ZVD">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Cl1-dt-KfI" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="GX8-lo-VH2"/>
+                <constraint firstItem="Cl1-dt-KfI" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="15" id="lxN-JU-aIq"/>
+            </constraints>
+            <connections>
+                <outlet property="headerTitle" destination="Cl1-dt-KfI" id="pV1-aK-Cg3"/>
+            </connections>
+            <point key="canvasLocation" x="-13" y="6"/>
+        </customView>
+    </objects>
+</document>

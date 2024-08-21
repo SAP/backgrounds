@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<!--
+    Copyright 2022-2024 SAP SE
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadContent</key>
+			<dict>
+				<key>corp.sap.Backgrounds</key>
+				<dict>
+					<key>Forced</key>
+					<array>
+						<dict>
+							<key>mcx_preference_settings</key>
+							<dict>
+							
+								<!--
+									key:    HidePredefinedBackgrounds
+									value:  a boolean
+									
+									If set to true, the predefined backgrounds included in the
+									application (or specified using the "PredefinedBackgrounds" key),
+                                    will not be displayed. If set to false, the predefined backgrounds
+                                    cannot be hided by the user. If not specified (default), the
+                                    predefined backgrounds are displayed and can be hided by the user.
+								-->
+								<key>HidePredefinedBackgrounds</key>
+								<false/>
+								
+								<!--
+									key:	PredefinedBackgrounds
+									value:	an array of dictionaries
+									
+									This key allows to overwrite the predefined backgrounds included
+									in the application, so administrators can define their own set
+									of predefinded backgrounds. The dictionaries must look like this:
+                                
+                                        key:    BackgroundName
+                                        value:  a string specifying the name of the background. This
+                                                key is optional but must be used if the app should
+                                                be used from the command line. If the name is not
+                                                specified, the background does not show up if using
+                                                the "--listBackgrounds" argument.
+                                
+                                        key:    GradientColors
+                                        value:  an array of numbers (integer) specifying the colors of
+                                                the gradient. Each number is the integer representation
+                                                of the rgb value. So if you have e.g. a color like this:
+                                                R: 250 G: 145 B: 0. This would be FA 91 00 in hex and
+                                                converted to decimal this would be 16421120.
+                                
+                                        key:    GradientLocations
+                                        value:  an array of numbers (float or integer) specifying the locations
+                                                of the colors (configured using the "GradientColors" key).
+                                
+                                        key:    GradientAngle
+                                        value:  a number (float or integer) specifying the angle of
+                                                a linear gradient.
+                                
+                                        key:    RadialGradient
+                                        value:  a boolean specifying if the gradient is radial (true)
+                                                or linear (false or not specified).
+                                
+                                        key:    GradientXPosition
+                                        value:  a number (float or integer) specifying the horizontal center
+                                                position of a radial gradient, Starting with -1 at the left side
+                                                of the background and ending with +1 at the right side.
+                                
+                                        key:    GradientYPosition
+                                        value:  a number (float or integer) specifying the vertical center
+                                                position of a radial gradient, Starting with -1 at the bottom of
+                                                the background and ending with +1 at the top.
+                                
+                                        key:    LogoName
+                                        value:  a string specifying the name of the logo image to embed into
+                                                the background image. The logo must be configured using the
+                                                "LogoImages" key (see below). If the logo is not configured
+                                                or the configured logo image does not exist, the app displays
+                                                a small caution symbol instead of the logo image.
+                                
+                                        key:    LogoSize
+                                        value:  a number (float or integer) specifying the size of the logo
+                                                image in percent (%) of the size of the background image. This
+                                                key overwrites the (fixed) size of the logo image, configured
+                                                for the logo in "LogoImages".
+                                
+                                        key:    LogoXPosition
+                                        value:  a number (float or integer) specifying the horizontal position of
+                                                the logo image in percent (%). Starting with 0% at the left side
+                                                of the background and ending with 100% at the right side. This
+                                                key overwrites the (fixed) position of the logo image, configured
+                                                for the logo in "LogoImages".
+                                
+                                        key:    LogoYPosition
+                                        value:  a number (float or integer) specifying the vertical position of
+                                                the logo image in percent (%). Starting with 0% at the bottom
+                                                of the background and ending with 100% at the top. This key
+                                                overwrites the (fixed) position of the logo image, configured
+                                                for the logo in "LogoImages".
+								-->
+
+								<key>PredefinedBackgrounds</key>
+								<array>
+                                    
+									<dict>
+                                        <key>BackgroundName</key>
+                                        <string>From gold to blue</string>
+										<key>GradientColors</key>
+										<array>
+											<integer>15772416</integer>
+											<integer>11051840</integer>
+											<integer>6265727</integer>
+											<integer>36819</integer>
+										</array>
+										<key>GradientLocations</key>
+										<array>
+											<real>0</real>
+											<real>0.33</real>
+											<real>0.66</real>
+											<real>1</real>
+										</array>
+                                        <key>GradientAngle</key>
+                                        <integer>0</integer>
+										
+										<key>LogoName</key>
+										<string>My Logo</string>
+										<key>LogoSize</key>
+										<real>50</real>
+										<key>LogoXPosition</key>
+										<real>50</real>
+										<key>LogoYPosition</key>
+										<real>50</real>
+									</dict>
+                                    
+                                    <dict>
+                                        <key>GradientColors</key>
+                                        <array>
+                                            <integer>15772416</integer>
+                                            <integer>13990695</integer>
+                                            <integer>12208719</integer>
+                                            <integer>9833090</integer>
+                                        </array>
+                                        <key>GradientLocations</key>
+                                        <array>
+                                            <real>0.0</real>
+                                            <real>0.33000001311302185</real>
+                                            <real>0.6600000262260437</real>
+                                            <real>1</real>
+                                        </array>
+                                        <key>GradientXPosition</key>
+                                        <real>0.0</real>
+                                        <key>GradientYPosition</key>
+                                        <real>0.0</real>
+                                        <key>RadialGradient</key>
+                                        <true/>
+                                    </dict>
+                                    
+								</array>
+								<!--
+									key:    LogoImages
+									value:  an array of dictionaries
+									
+									This key allows to specify logos that then can be embedded
+									into the background image. The logo dictionaries must look
+                                    like this:
+                                
+                                        key:    LogoName
+                                        value:  a string specifying the logo name. This name is shown
+                                                in the app's logo menu and must be unique.
+                                    
+                                        key:    LogoPath
+                                        value:  a string containing the path to an image file. Alternatively
+                                                the logo can also be embedded in the configuration profile.
+                                                Then use the key "LogoData" instead. If both, "LogoPath" and
+                                                "LogoData" are specified, "LogoPath" is evaluated first and
+                                                if no valid image file is found, "LogoData" is used.
+                                    
+                                        key:    LogoData
+                                        value:  Base64 encoded image data. To get this data from an existing
+                                                image file, you could use the Terminal and then do something
+                                                like "base64 -b 52 -i <path to file>". The output can be used
+                                                as value for this key. If "LogoPath" is also defined, it would
+                                                be evaluated first and only if it returns no valid image data,
+                                                "LogoData" would be used.
+                                    
+                                        key:    LogoSize
+                                        value:  a number (float or integer) specifying the size of the logo
+                                                image in percent (%) of the size of the background image. This
+                                                optional key allows you to specify an initial size for the
+                                                logo image.
+                                    
+                                        key:    LogoSizeLocked
+                                        value:  an optional boolean (true or false) that allows to lock the size
+                                                of the logo image. If set to true, the size specified using the
+                                                "LogoSize" key, cannot be changed by a user anymore. The logo
+                                                size slider will be disabled. So if you want to make sure your
+                                                logo is used in a specific size, specify the size and then lock
+                                                it using this key.
+                                    
+                                        key:    LogoXPosition
+                                        value:  a number (float or integer) specifying the horizontal position of
+                                                the logo image in percent (%). Starting with 0% at the left side
+                                                of the background and ending with 100% at the right side. This
+                                                optional key allows you to specify an initial horizontal position
+                                                for the logo image.
+                                    
+                                        key:    LogoXPositionLocked
+                                        value:  an optional boolean (true or false) that allows to lock the horizontal
+                                                position of the logo image. If set to true, the position specified using
+                                                the "LogoXPosition" key, cannot be changed by a user anymore. The logo
+                                                horizontal position slider will be disabled. So if you want to make sure
+                                                your logo is displayed on a specific position of the background image,
+                                                specify the position (using the "LogoXPosition" and "LogoYPosition" keys)
+                                                and then lock the position using the "LogoXPositionLocked" and
+                                                "LogoXPositionLocked" keys.
+                                    
+                                        key:    LogoYPosition
+                                        value:  a number (float or integer) specifying the vertical position of the logo
+                                                image in percent (%). Starting with 0% at the bottom of the background
+                                                and ending with 100% at the top. This optional key allows you to specify
+                                                an initial vertical position for the logo image.
+                                
+                                        key:    LogoYPositionLocked
+                                        value:  an optional boolean (true or false) that allows to lock the vertical
+                                                position of the logo image. If set to true, the position specified using
+                                                the "LogoYPosition" key, cannot be changed by a user anymore. The logo
+                                                vertical position slider will be disabled. So if you want to make sure
+                                                your logo is displayed on a specific position of the background image,
+                                                specify the position (using the "LogoXPosition" and "LogoYPosition" keys)
+                                                and then lock the position using the "LogoXPositionLocked" and
+                                                "LogoXPositionLocked" keys.
+								-->
+								<key>LogoImages</key>
+								<array>
+                                    
+									<dict>
+                                        <key>LogoName</key>
+                                        <string>My Logo</string>
+										<key>LogoPath</key>
+										<string>/Library/Application Support/Backgrounds/my_logo.pdf</string>
+										<key>LogoSize</key>
+										<integer>20</integer>
+										<key>LogoSizeLocked</key>
+										<true/>
+										<key>LogoXPosition</key>
+										<integer>50</integer>
+										<key>LogoXPositionLocked</key>
+										<true/>
+										<key>LogoYPosition</key>
+										<integer>50</integer>
+										<key>LogoYPositionLocked</key>
+										<true/>
+									</dict>
+                                    
+									<dict>
+                                        <key>LogoName</key>
+                                        <string>My other logo</string>
+										<key>LogoData</key>
+										<data/>
+                                        <key>LogoSize</key>
+                                        <integer>50</integer>
+									</dict>
+                                    
+								</array>
+								
+							</dict>
+						</dict>
+					</array>
+				</dict>
+			</dict>
+			<key>PayloadDescription</key>
+			<string/>
+			<key>PayloadDisplayName</key>
+			<string>Backgrounds configuration</string>
+			<key>PayloadEnabled</key>
+			<true/>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.ManagedClient.preferences.0D62FE20-CD3B-449A-9687-CEBFC22A9D6E</string>
+			<key>PayloadOrganization</key>
+			<string>SAP SE</string>
+			<key>PayloadType</key>
+			<string>com.apple.ManagedClient.preferences</string>
+			<key>PayloadUUID</key>
+			<string>0D62FE20-CD3B-449A-9687-CEBFC22A9D6E</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Configures the Backgrounds app.</string>
+	<key>PayloadDisplayName</key>
+	<string>Backgrounds configuration</string>
+	<key>PayloadEnabled</key>
+	<true/>
+	<key>PayloadIdentifier</key>
+	<string>C0A2C7B3-5A29-4CDB-BCC2-FF7EDF7602FA</string>
+	<key>PayloadOrganization</key>
+	<string>SAP SE</string>
+	<key>PayloadRemovalDisallowed</key>
+	<true/>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>4AF30E1C-B0A3-4BE4-9111-AC46D3B2153D</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
