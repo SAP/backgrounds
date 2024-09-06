@@ -62,7 +62,7 @@ We as members, contributors, and leaders pledge to make participation in our com
 
 # License 🏷️
 
-Copyright (c) 2023 SAP SE or an SAP affiliate company and Backgrounds contributors. Please see our [LICENSE](LICENSE) for copyright and license information. Detailed information including third-party components and their licensing/copyright information is available [via the REUSE tool](https://api.reuse.software/info/github.com/SAP/backgrounds).
+Copyright (c) 2023-2024 SAP SE or an SAP affiliate company and Backgrounds contributors. Please see our [LICENSE](LICENSE) for copyright and license information. Detailed information including third-party components and their licensing/copyright information is available [via the REUSE tool](https://api.reuse.software/info/github.com/SAP/backgrounds).
 
 
 # Security 👮
