@@ -4,19 +4,16 @@
 
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP/backgrounds)](https://api.reuse.software/info/github.com/SAP/backgrounds)
 
-**Customize Your Desktop with Backgrounds**
+**The easiest wato customize your desktop background!**
  
-Do you ever feel like your desktop background is too plain and boring? Would you like to make it more eye-catching and customize it to fit your needs? With Backgrounds, you can do just that!
- 
-Backgrounds is an app that allows you to create your own custom background for your desktop. You can choose between two gradient types—linear and radial—as well as embed your logo. You can also select from a wide range of predefined backgrounds. Every pixel of your background will be automatically calculated and optimized for your screen size. 
- 
-So, if you're looking for a way to spruce up your desktop, Backgrounds is the perfect app for you. With Backgrounds, you can create a custom background and make your desktop look amazing. Try it today and see what you can create!
+No more plain and boring desktop backgrounds! With _Backgrounds_ you can customize your desktop background to fit your needs!
+
+_Backgrounds_ is an application for macOS that allows you to create your own custom background for your desktop. You can choose between linear and radial gradient types. Embed your logo and choose from a wide range of predefined backgrounds. The backgrounds will automatically be calculated to fit your screen size.
+
 
 **The Backgrounds app supports the following features:**
 
-🌈 Custom Background
-
-🌟 Linear or radial gradient type
+🌈 Create a Custom Background
 
 ❌ No graphic skills are needed
 
@@ -31,7 +28,7 @@ So, if you're looking for a way to spruce up your desktop, Backgrounds is the pe
 
 Have a look how easy it is to set a customized background. This is only one demo shown, there are still many different variations possible to create and set a desired background.
 
-![BackgroundsBanner](https://github.com/SAP/backgrounds/blob/main/readme_images/Backgrounds_save_user_created_background.gif)
+![BackgroundsBanner](https://github.com/SAP/backgrounds/blob/main/readme_images/DemoBackgrounds.gif)
 
 
 
@@ -46,11 +43,7 @@ You can find the following links also in the Wiki for Backgrounds.
 * [Managing Backgrounds](https://github.com/SAP/backgrounds/wiki/Managing-Backgrounds)
 * [Frequently Asked Questions](https://github.com/SAP/backgrounds/wiki/Frequently-Asked-Questions)
 
-# Example 💡
 
-Here you can find an example how the Backgrounds application looks like. There are some predefined background, but you can make your own fancy background. The tutorial how to do that, you can find in [Using Backgrounds](https://github.com/SAP/backgrounds/wiki/Using-Backgrounds).
-
-![BackgroundsApplication](https://github.com/SAP/backgrounds/blob/main/readme_images/Backgrounds_application.png)
 
 # Feedback and Contributing
 
