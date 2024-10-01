@@ -4,7 +4,7 @@
 
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP/backgrounds)](https://api.reuse.software/info/github.com/SAP/backgrounds)
 
-**The easiest wato customize your desktop background!**
+**The easiest way to customize your desktop background!**
  
 No more plain and boring desktop backgrounds! With _Backgrounds_ you can customize your desktop background to fit your needs!
 
