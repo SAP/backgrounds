@@ -37,8 +37,12 @@
     BOOL success = NO;
     
     if ([anImage isValid]) {
+        
         [[self imageView] setImage:anImage];
         [[self imageView] setToolTip:toolTip];
+        [[self imageView] setAccessibilityLabel:toolTip];
+        [[self imageView] setAccessibilityChildren:nil];
+        
         success = YES;
     }
     

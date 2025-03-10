@@ -66,6 +66,9 @@
                                      nil
                                      ];
     [_userDefaults registerDefaults:defaultSettings];
+    
+    [_logoPopupButton setAccessibilityLabel:@"Logo"];
+    [_imagePreview setAccessibilityChildren:nil];
 
     // match the aspect ratio of the preview image with
     // the aspect ratio of the screen
@@ -115,6 +118,7 @@
     
     // set a menu delegate for our collection view
     [_collectionView setMenuDelegate:self];
+    [_collectionView setAccessibilityLabel:@"Predefined and saved backgrounds"];
     
     // set dragging operation
     [_collectionView registerForDraggedTypes:[NSArray arrayWithObjects:kMTFileTypeExport, NSPasteboardTypeFileURL, nil]];
