@@ -6,5 +6,5 @@ SPDX-PackageDownloadLocation = "https://github.com/SAP/backgrounds"
 [[annotations]]
 path = "**"
 precedence = "aggregate"
-SPDX-FileCopyrightText = "2023 SAP SE or an SAP affiliate company and backgrounds contributors."
+SPDX-FileCopyrightText = "2023-2025 SAP SE or an SAP affiliate company and backgrounds contributors."
 SPDX-License-Identifier = "Apache-2.0"
