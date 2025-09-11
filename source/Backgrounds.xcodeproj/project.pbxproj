@@ -27,6 +27,7 @@
 		AD5671C928E1C79F004317CB /* MTImage.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5671C828E1C79F004317CB /* MTImage.m */; };
 		AD67050B2872F50400D7FEC2 /* Backgrounds.mobileconfig in Resources */ = {isa = PBXBuildFile; fileRef = AD67050A2872F50400D7FEC2 /* Backgrounds.mobileconfig */; };
 		AD67EBAC28E33BED003DEDB5 /* MTFilePromiseProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = AD67EBAB28E33BED003DEDB5 /* MTFilePromiseProvider.m */; };
+		AD9473DD2E4B7C250064C895 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = AD9473DC2E4B7C250064C895 /* AppIcon.icon */; };
 		ADB5298328BE5ED8004D4BFA /* MTCollectionViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB5298128BE5ED8004D4BFA /* MTCollectionViewHeader.m */; };
 		ADB5298528BE5F74004D4BFA /* MTCollectionViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADB5298428BE5F74004D4BFA /* MTCollectionViewHeader.xib */; };
 		ADCB8E1A2779C04D00B27213 /* MTDesktopPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCB8E192779C04D00B27213 /* MTDesktopPicture.m */; };
@@ -89,6 +90,7 @@
 		AD67050A2872F50400D7FEC2 /* Backgrounds.mobileconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Backgrounds.mobileconfig; sourceTree = "<group>"; };
 		AD67EBAA28E33BED003DEDB5 /* MTFilePromiseProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTFilePromiseProvider.h; sourceTree = "<group>"; };
 		AD67EBAB28E33BED003DEDB5 /* MTFilePromiseProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTFilePromiseProvider.m; sourceTree = "<group>"; };
+		AD9473DC2E4B7C250064C895 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 		ADB5298128BE5ED8004D4BFA /* MTCollectionViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCollectionViewHeader.m; sourceTree = "<group>"; };
 		ADB5298228BE5ED8004D4BFA /* MTCollectionViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCollectionViewHeader.h; sourceTree = "<group>"; };
 		ADB5298428BE5F74004D4BFA /* MTCollectionViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTCollectionViewHeader.xib; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 		AD6705092872F4C200D7FEC2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AD9473DC2E4B7C250064C895 /* AppIcon.icon */,
 				AD026E55274BEAC900E4E224 /* Assets.xcassets */,
 				AD026E5C274BEAC900E4E224 /* Backgrounds.entitlements */,
 				AD67050A2872F50400D7FEC2 /* Backgrounds.mobileconfig */,
@@ -251,7 +254,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					AD026E4B274BEAC700E4E224 = {
 						CreatedOnToolsVersion = 13.1;
@@ -287,6 +290,7 @@
 				AD026E6F274BFF8100E4E224 /* Predefined.plist in Resources */,
 				AD39F34228E448160052B39E /* MTCollectionViewGapItem.xib in Resources */,
 				AD026E56274BEAC900E4E224 /* Assets.xcassets in Resources */,
+				AD9473DD2E4B7C250064C895 /* AppIcon.icon in Resources */,
 				ADDBE5FC2C602515008FAA21 /* Localizable.xcstrings in Resources */,
 				AD1E5FE92C6026E400E9C59B /* InfoPlist.xcstrings in Resources */,
 				ADB5298528BE5F74004D4BFA /* MTCollectionViewHeader.xib in Resources */,
@@ -386,6 +390,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 7R5ZEU67FQ;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -409,6 +414,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Debug;
@@ -451,6 +457,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7R5ZEU67FQ;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -467,6 +474,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Release;
@@ -480,10 +488,12 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2147;
+				CURRENT_PROJECT_VERSION = 2149;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 7R5ZEU67FQ;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_FILE_ACCESS_PICTURE_FOLDER = readwrite;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Backgrounds/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
@@ -495,7 +505,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.7;
 				PRODUCT_BUNDLE_IDENTIFIER = corp.sap.Backgrounds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -511,10 +521,12 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2147;
+				CURRENT_PROJECT_VERSION = 2149;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 7R5ZEU67FQ;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_FILE_ACCESS_PICTURE_FOLDER = readwrite;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Backgrounds/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
@@ -526,7 +538,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.7;
 				PRODUCT_BUNDLE_IDENTIFIER = corp.sap.Backgrounds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
