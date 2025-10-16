@@ -1,4 +1,6 @@
-![BackgroundsBanner](https://github.com/SAP/backgrounds/blob/main/readme_images/banner_backgrounds.png)
+<img src="https://github.com/SAP/backgrounds/blob/main/readme_images/backgrounds_banner_github.png" width="879"><br/>
+
+<br/>
 
 # Backgrounds
 
