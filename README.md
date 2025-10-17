@@ -15,7 +15,7 @@ _Backgrounds_ is an application for macOS that allows you to create your own cus
 
 **The Backgrounds app supports the following features:**
 
-🌈 Create custom backgrounds/wallpapers
+🌈 Create custom desktop backgrounds (wallpapers)
 
 ❌ No graphic skills are needed
 
