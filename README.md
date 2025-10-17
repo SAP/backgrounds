@@ -31,7 +31,7 @@ _Backgrounds_ is an application for macOS that allows you to create your own cus
 
 Have a look how easy it is to set a customized background. This is only one demo shown, there are many different variations possible to create and set a desired background.
 
-https://github.com/user-attachments/assets/6f2a5fc5-e6da-413d-abff-fcd59ab676f8
+https://github.com/user-attachments/assets/9ffef7f6-3b36-43cd-b755-9b6021926d81
 
 <br/>
 
