@@ -41,8 +41,8 @@ To learn more about _Backgrounds_ features, make sure to take a look at our [wik
 
 * [Installation](https://github.com/SAP/backgrounds/wiki/Installation)
 * [Uninstallation](https://github.com/SAP/backgrounds/wiki/Uninstallation)
-* [Using Backgrounds](https://github.com/SAP/backgrounds/wiki/Using-Backgrounds)
-* [Managing Backgrounds](https://github.com/SAP/backgrounds/wiki/Managing-Backgrounds)
+* [Using _Backgrounds_](https://github.com/SAP/backgrounds/wiki/Using-Backgrounds)
+* [Managing _Backgrounds_](https://github.com/SAP/backgrounds/wiki/Managing-Backgrounds)
 * [Frequently Asked Questions](https://github.com/SAP/backgrounds/wiki/Frequently-Asked-Questions)
 
 <br/>
