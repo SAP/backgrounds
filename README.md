@@ -15,15 +15,15 @@ _Backgrounds_ is an application for macOS that allows you to create your own cus
 
 **The Backgrounds app supports the following features:**
 
-🌈 Create a Custom Background
+🌈 Create custom backgrounds/wallpapers
 
 ❌ No graphic skills are needed
 
 🚀 Various setting options
 
-⌨️ Command line for automatization
+⌨️ Command line for automation
 
-💻 Supports the newest macOS version
+💻 For macOS 11 and newer
 
 <br/>
 
@@ -37,7 +37,7 @@ Have a look how easy it is to set a customized background. This is only one demo
 
 # Documentation
 
-You can find the following links also in the Wiki for Backgrounds.
+If you want to learn more about _Backgrounds_ features, make sure to take a look at our [wiki]([https://github.com/SAP/macOS-icon-generator/wiki](https://github.com/SAP/backgrounds/wiki)) or the links below:
 
 * [Installation](https://github.com/SAP/backgrounds/wiki/Installation)
 * [Uninstallation](https://github.com/SAP/backgrounds/wiki/Uninstallation)
@@ -70,6 +70,6 @@ Found a security-related issue or vulnerability and want to notify us? [Please s
 
 <br/>
 
-# Support 🤓
+# Support
 
 This project is 'as-is' with no support, no changes being made. You are welcome to make changes to improve it but we are not available for questions or support of any kind.
