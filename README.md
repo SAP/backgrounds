@@ -37,7 +37,7 @@ Have a look how easy it is to set a customized background. This is only one demo
 
 # Documentation
 
-If you want to learn more about _Backgrounds_ features, make sure to take a look at our [wiki]([https://github.com/SAP/macOS-icon-generator/wiki](https://github.com/SAP/backgrounds/wiki)) or the links below:
+If you want to learn more about _Backgrounds_ features, make sure to take a look at our [wiki](https://github.com/SAP/backgrounds/wiki) or the links below:
 
 * [Installation](https://github.com/SAP/backgrounds/wiki/Installation)
 * [Uninstallation](https://github.com/SAP/backgrounds/wiki/Uninstallation)
