@@ -10,7 +10,7 @@
  
 No more plain and boring desktop backgrounds! With _Backgrounds_ you can customize your desktop background to fit your needs!
 
-_Backgrounds_ is an application for macOS that allows you to create your own custom background for your desktop. You can choose between linear and radial gradient types. Embed your logo and choose from a wide range of predefined backgrounds. The backgrounds will automatically be calculated to fit your screen size.
+_Backgrounds_ is an application for macOS that allows you to create your own custom background for your desktop. You can choose between linear and radial gradient types. Embed your logo and choose from a wide range of predefined backgrounds. The backgrounds will automatically be calculated to fit your screen size - so they never look blurry.
 
 
 **The Backgrounds app supports the following features:**
