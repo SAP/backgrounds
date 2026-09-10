@@ -23,7 +23,7 @@ _Backgrounds_ is an application for macOS that allows you to create your own cus
 
 ⌨️ Command line for automation
 
-💻 For macOS 12 and newer
+💻 For macOS 13 and newer
 
 <br/>
 
