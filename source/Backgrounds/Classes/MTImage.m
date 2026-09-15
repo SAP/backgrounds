@@ -1,6 +1,6 @@
 /*
      MTImage.m
-     Copyright 2022-2024 SAP SE
+     Copyright 2022-2026 SAP SE
      
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -16,6 +16,7 @@
 */
 
 #import "MTImage.h"
+#import <UniformTypeIdentifiers/UTCoreTypes.h>
 
 @implementation NSImage (MTImage)
 
@@ -141,7 +142,7 @@
         NSURL *fileURL = [NSURL fileURLWithPath:path];
         [fileURL getResourceValue:&utiValue forKey:NSURLTypeIdentifierKey error:nil];
         
-        if ([utiValue isEqualTo:(NSString*)kUTTypeApplicationBundle]) {
+        if ([utiValue isEqualTo:[UTTypeApplicationBundle identifier]]) {
             sourceImage = [[NSWorkspace sharedWorkspace] iconForFile:path];
             
             if ([sourceImage isValid]) {

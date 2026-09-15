@@ -28,6 +28,7 @@
 		AD67050B2872F50400D7FEC2 /* Backgrounds.mobileconfig in Resources */ = {isa = PBXBuildFile; fileRef = AD67050A2872F50400D7FEC2 /* Backgrounds.mobileconfig */; };
 		AD67EBAC28E33BED003DEDB5 /* MTFilePromiseProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = AD67EBAB28E33BED003DEDB5 /* MTFilePromiseProvider.m */; };
 		AD9473DD2E4B7C250064C895 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = AD9473DC2E4B7C250064C895 /* AppIcon.icon */; };
+		ADA534F5300E0F0100B8984D /* MTUpdateChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA534F4300E0F0100B8984D /* MTUpdateChecker.m */; };
 		ADB5298328BE5ED8004D4BFA /* MTCollectionViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB5298128BE5ED8004D4BFA /* MTCollectionViewHeader.m */; };
 		ADB5298528BE5F74004D4BFA /* MTCollectionViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADB5298428BE5F74004D4BFA /* MTCollectionViewHeader.xib */; };
 		ADCB8E1A2779C04D00B27213 /* MTDesktopPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCB8E192779C04D00B27213 /* MTDesktopPicture.m */; };
@@ -91,6 +92,8 @@
 		AD67EBAA28E33BED003DEDB5 /* MTFilePromiseProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTFilePromiseProvider.h; sourceTree = "<group>"; };
 		AD67EBAB28E33BED003DEDB5 /* MTFilePromiseProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTFilePromiseProvider.m; sourceTree = "<group>"; };
 		AD9473DC2E4B7C250064C895 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
+		ADA534F3300E0F0100B8984D /* MTUpdateChecker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTUpdateChecker.h; sourceTree = "<group>"; };
+		ADA534F4300E0F0100B8984D /* MTUpdateChecker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTUpdateChecker.m; sourceTree = "<group>"; };
 		ADB5298128BE5ED8004D4BFA /* MTCollectionViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCollectionViewHeader.m; sourceTree = "<group>"; };
 		ADB5298228BE5ED8004D4BFA /* MTCollectionViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCollectionViewHeader.h; sourceTree = "<group>"; };
 		ADB5298428BE5F74004D4BFA /* MTCollectionViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTCollectionViewHeader.xib; sourceTree = "<group>"; };
@@ -191,6 +194,8 @@
 				AD53BA3D28EB5FC1001C2671 /* MTPopUpButton.m */,
 				ADE07F4E28E435700034ED25 /* MTSlider.h */,
 				ADE07F4F28E435700034ED25 /* MTSlider.m */,
+				ADA534F3300E0F0100B8984D /* MTUpdateChecker.h */,
+				ADA534F4300E0F0100B8984D /* MTUpdateChecker.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -254,7 +259,8 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 2600;
+				LastUpgradeCheck = 2700;
+				ORGANIZATIONNAME = "SAP SE";
 				TargetAttributes = {
 					AD026E4B274BEAC700E4E224 = {
 						CreatedOnToolsVersion = 13.1;
@@ -307,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD39F34028E4456A0052B39E /* MTCollectionViewGapItem.m in Sources */,
+				ADA534F5300E0F0100B8984D /* MTUpdateChecker.m in Sources */,
 				AD026E54274BEAC700E4E224 /* MTMainViewController.m in Sources */,
 				ADB5298328BE5ED8004D4BFA /* MTCollectionViewHeader.m in Sources */,
 				AD4BAC38275FA5830008C80D /* MTGradientPickerView.m in Sources */,
@@ -408,8 +415,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = "";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -469,8 +477,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = "";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -488,7 +497,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2149;
+				CURRENT_PROJECT_VERSION = 2175;
 				DEAD_CODE_STRIPPING = YES;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_FILE_ACCESS_PICTURE_FOLDER = readwrite;
@@ -497,15 +506,15 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Backgrounds/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022-2024 SAP SE. All rights reserved.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022-2026 SAP SE. All rights reserved.";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.0.7;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = corp.sap.Backgrounds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -521,7 +530,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2149;
+				CURRENT_PROJECT_VERSION = 2175;
 				DEAD_CODE_STRIPPING = YES;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_FILE_ACCESS_PICTURE_FOLDER = readwrite;
@@ -530,15 +539,15 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Backgrounds/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022-2024 SAP SE. All rights reserved.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022-2026 SAP SE. All rights reserved.";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.0.7;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = corp.sap.Backgrounds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

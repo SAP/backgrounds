@@ -500,6 +500,24 @@
         }
       }
     },
+    "LoM-pq-5Im.title" : {
+      "comment" : "Class = \"NSMenuItem\"; title = \"Check for Updates\"; ObjectID = \"LoM-pq-5Im\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nach Updates suchen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Check for Updates"
+          }
+        }
+      }
+    },
     "MD5-0m-iXr.title" : {
       "comment" : "Class = \"NSMenuItem\"; title = \"File\"; ObjectID = \"MD5-0m-iXr\";",
       "extractionState" : "extracted_with_value",

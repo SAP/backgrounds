@@ -1,6 +1,6 @@
 /*
      AppDelegate.m
-     Copyright 2022-2024 SAP SE
+     Copyright 2022-2026 SAP SE
      
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -37,7 +37,8 @@
     
         MTBackgroundCollection *backgroundCollection = [[MTBackgroundCollection alloc] init];
 
-#pragma mark "Set Background"
+#pragma mark - "Set Background"
+        
         NSInteger commandIndex = [appArguments indexOfObject:@"--setBackground"];
                             
         if (commandIndex != NSNotFound) {
@@ -72,7 +73,8 @@
                             }
                         }
                         
-#pragma mark "All Screens"
+#pragma mark - "All Screens"
+                        
                         NSArray *allScreens = ([appArguments containsObject:@"--allScreens"]) ? [NSScreen screens] : [NSArray arrayWithObject:[NSScreen mainScreen]];
                         
                         for (NSScreen *aScreen in allScreens) {
@@ -120,7 +122,8 @@
             
         } else {
             
-#pragma mark "List Backgrounds"
+#pragma mark - "List Backgrounds"
+            
             NSInteger commandIndex = [appArguments indexOfObject:@"--listBackgrounds"];
     
             if (commandIndex != NSNotFound) {

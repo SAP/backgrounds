@@ -1,6 +1,6 @@
 /*
      MTMainViewController.m
-     Copyright 2022-2024 SAP SE
+     Copyright 2022-2026 SAP SE
      
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -23,6 +23,7 @@
 #import "MTSlider.h"
 #import "MTPopUpButton.h"
 #import "MTLogoCollection.h"
+#import "MTUpdateChecker.h"
 
 @interface MTMainViewController ()
 @property (weak) IBOutlet NSImageView *imagePreview;
@@ -43,8 +44,6 @@
 @property (weak) IBOutlet NSButton *radialGradientButton;
 @property (weak) IBOutlet MTPopUpButton *logoPopupButton;
 @property (weak) IBOutlet NSBox *logoControls;
-@property (weak) IBOutlet NSLayoutConstraint *logoControlsHeight;
-@property (weak) IBOutlet NSLayoutConstraint *logoControlsTop;
 
 @property (nonatomic, strong, readwrite) NSUserDefaults *userDefaults;
 @property (nonatomic, strong, readwrite) MTBackgroundCollection *backgroundCollection;
@@ -54,7 +53,8 @@
 
 @implementation MTMainViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
 
     _userDefaults = [NSUserDefaults standardUserDefaults];
@@ -99,18 +99,12 @@
                                                                                           ascending:YES
                                                                                            selector:@selector(localizedCaseInsensitiveCompare:)]];
         [_logoArrayController addObjects:[allLogos sortedArrayUsingDescriptors:sortDescriptors]];
+        [_logoControls setHidden:NO];
         
     } else {
         
-        // if no logo images are configured, remove
-        // the constraints of all our subviews, so we
-        // can set the height of our box to 0
-        for (NSView *aSubview in [_logoControls subviews]) { [aSubview removeConstraints:[aSubview constraints]]; }
-        [_logoControls setBoxType:NSBoxCustom];
-        [_logoControls setTransparent:YES];
-        [_logoControls setBorderWidth:0];
-        [_logoControlsTop setConstant:0];
-        [_logoControlsHeight setConstant:0];
+        // if no logo images are configured, we hide the logo controls
+        [_logoControls setHidden:YES];
     }
     
     // initialize our backgrounds collection
@@ -284,7 +278,7 @@
         [self changeGradientAngle:nil];
     }
 
-    if ([_logoControlsHeight constant] > 0) {
+    if (![_logoControls isHidden]) {
 
        // if the selected background contains a logo, we make sure it
        // is displayed. if the user manually selected a logo and the
@@ -327,7 +321,8 @@
     [_collectionView reloadSections:[NSIndexSet indexSetWithIndex:kMTSectionUserDefined]];
 }
 
-#pragma mark Notification handlers
+#pragma mark - Notification handlers
+
 - (void)screensDidChange:(NSNotification*)aNotification
 {
     ([[NSScreen screens] count] > 1) ? [_allScreensButton setHidden:NO] : [_allScreensButton setHidden:YES];
@@ -356,7 +351,7 @@
         NSArray <NSLayoutConstraint*> *filteredArray = [imageViewConstraints filteredArrayUsingPredicate:predicate];
         
         [filteredArray enumerateObjectsWithOptions:NSEnumerationConcurrent
-                                        usingBlock:^(NSLayoutConstraint * _Nonnull existingConstraint, NSUInteger idx, BOOL * _Nonnull stop) {
+                                        usingBlock:^(NSLayoutConstraint *existingConstraint, NSUInteger idx, BOOL *stop) {
             
             NSLayoutConstraint *newConstraint = [NSLayoutConstraint constraintWithItem:[existingConstraint firstItem]
                                                                              attribute:[existingConstraint firstAttribute]
@@ -403,7 +398,8 @@
     }];
 }
 
-#pragma mark IB actions
+#pragma mark - IB Actions
+
 - (IBAction)showOrHidePredefinedGradients:(id)sender
 {
     BOOL hidePredefinedGradients = [_userDefaults boolForKey:kMTDefaultsPredefinedHide];
@@ -746,22 +742,45 @@
     [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:kMTGitHubURL]];
 }
 
-#pragma mark NSMenuValidation
+- (IBAction)checkForUpdates:(id)sender
+{
+    MTUpdateChecker *updateChecker = [[MTUpdateChecker alloc] initWithBundleIdentifier:kMTUpdateCheckerBundleIdentifier];
+    [updateChecker launch];
+}
+
+#pragma mark - NSMenuValidation
+
 - (BOOL)validateMenuItem:(NSMenuItem *)menuItem
 {
     // make sure the "Export Selected" entry in Main Menu is
     // only enabled if at least one user-defined background
     // has been selected
     BOOL enableItem = YES;
-    
-    if ([menuItem tag] == 2000) {
+
+    if ([menuItem tag] == 1000) {
+        
+        enableItem = !([[NSUserDefaults standardUserDefaults] objectIsForcedForKey:kMTDefaultsUpdateCheckDisabledKey] &&
+                       [[NSUserDefaults standardUserDefaults] boolForKey:kMTDefaultsUpdateCheckDisabledKey]);
+        
+        // if update checking has not been disabled, we check if the Patcher app is installed
+        if (enableItem) {
+            
+            MTUpdateChecker *updateChecker = [[MTUpdateChecker alloc] initWithBundleIdentifier:kMTUpdateCheckerBundleIdentifier];
+            enableItem = [updateChecker isAvailable];
+        }
+        
+        [menuItem setHidden:!enableItem];
+        
+    } else if ([menuItem tag] == 2000) {
+        
         enableItem = ([[_collectionView selectionIndexesInSection:kMTSectionUserDefined] count] > 0) ? YES : NO;
     }
     
     return enableItem;
 }
 
-#pragma mark MTGradientPickerDelegate
+#pragma mark - MTGradientPickerDelegate
+
 - (void)gradientPickerDidChangeColors:(MTGradientPickerView*)view
 {
     [self updatePreview:nil];
@@ -807,7 +826,8 @@
     [_collectionView takeSelectionSnaphot];
 }
 
-#pragma mark NSUndoManager
+#pragma mark - NSUndoManager
+
 - (void)gradientPicker:(MTGradientPickerView *)view replaceColor:(NSColor*)oldColor withColor:(NSColor*)newColor atLocation:(CGFloat)location
 {
     [[[self undoManager] prepareWithInvocationTarget:self] updatePreview:view];
@@ -889,7 +909,8 @@
     }
 }
 
-#pragma mark NSCollectionViewDataSource
+#pragma mark - NSCollectionViewDataSource
+
 - (NSInteger)numberOfSectionsInCollectionView:(MTCollectionView *)collectionView
 {
     return [_backgroundCollection numberOfSections];
@@ -977,7 +998,8 @@
     return view;
 }
 
-#pragma mark NSCollectionViewDelegate
+#pragma mark - NSCollectionViewDelegate
+
 - (NSSet<NSIndexPath *> *)collectionView:(MTCollectionView *)collectionView shouldSelectItemsAtIndexPaths:(NSSet<NSIndexPath *> *)indexPaths
 {
     // take a snapshot of our current selection
@@ -1320,7 +1342,8 @@
     return YES;
 }
 
-#pragma mark NSCollectionViewDelegateFlowLayout
+#pragma mark - NSCollectionViewDelegateFlowLayout
+
 - (NSSize)collectionView:(MTCollectionView *)collectionView layout:(NSCollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section
 {
     CGFloat headerViewHeight = (([_userDefaults boolForKey:kMTDefaultsPredefinedHide] && section == 0) || [collectionView numberOfItemsInSection:section] == 0) ? 0 : kMTHeaderViewHeight;
@@ -1336,13 +1359,15 @@
 }
 
 
-#pragma mark MTCollectionViewDelegate
+#pragma mark - MTCollectionViewDelegate
+
 - (void)collectionView:(MTCollectionView *)collectionView willDeleteItemsAtIndexPaths:(NSSet<NSIndexPath *> *)indexPaths
 {
     [self deleteCollectionViewItem:nil];
 }
 
-#pragma mark MTCollectionViewMenuDelegate
+#pragma mark - MTCollectionViewMenuDelegate
+
 - (NSMenu *)collectionView:(MTCollectionView *)collectionView willOpenMenuAtIndexPath:(NSIndexPath *)indexPath
 {
     NSMenu *theMenu = nil;

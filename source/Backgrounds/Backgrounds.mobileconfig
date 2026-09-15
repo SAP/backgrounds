@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 
 <!--
-    Copyright 2022-2024 SAP SE
+    Copyright 2022-2026 SAP SE
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -51,7 +51,7 @@
 									
 									This key allows to overwrite the predefined backgrounds included
 									in the application, so administrators can define their own set
-									of predefinded backgrounds. The dictionaries must look like this:
+									of predefined backgrounds. The dictionaries must look like this:
                                 
                                         key:    BackgroundName
                                         value:  a string specifying the name of the background. This
@@ -65,7 +65,7 @@
                                                 the gradient. Each number is the integer representation
                                                 of the rgb value. So if you have e.g. a color like this:
                                                 R: 250 G: 145 B: 0. This would be FA 91 00 in hex and
-                                                converted to decimal this would be 16421120.
+                                                FA 91 00 converted to decimal would be 16421120.
                                 
                                         key:    GradientLocations
                                         value:  an array of numbers (float or integer) specifying the locations
@@ -82,12 +82,12 @@
                                         key:    GradientXPosition
                                         value:  a number (float or integer) specifying the horizontal center
                                                 position of a radial gradient, Starting with -1 at the left side
-                                                of the background and ending with +1 at the right side.
+                                                of the background and ending with 1 at the right side.
                                 
                                         key:    GradientYPosition
                                         value:  a number (float or integer) specifying the vertical center
                                                 position of a radial gradient, Starting with -1 at the bottom of
-                                                the background and ending with +1 at the top.
+                                                the background and ending with 1 at the top.
                                 
                                         key:    LogoName
                                         value:  a string specifying the name of the logo image to embed into
@@ -104,15 +104,15 @@
                                 
                                         key:    LogoXPosition
                                         value:  a number (float or integer) specifying the horizontal position of
-                                                the logo image in percent (%). Starting with 0% at the left side
-                                                of the background and ending with 100% at the right side. This
+                                                the logo image in percent (%). Starting with 0 percent at the left side
+                                                of the background and ending with 100 percent at the right side. This
                                                 key overwrites the (fixed) position of the logo image, configured
                                                 for the logo in "LogoImages".
                                 
                                         key:    LogoYPosition
                                         value:  a number (float or integer) specifying the vertical position of
-                                                the logo image in percent (%). Starting with 0% at the bottom
-                                                of the background and ending with 100% at the top. This key
+                                                the logo image in percent (%). Starting with 0 percent at the bottom
+                                                of the background and ending with 100 percent at the top. This key
                                                 overwrites the (fixed) position of the logo image, configured
                                                 for the logo in "LogoImages".
 								-->
@@ -217,8 +217,8 @@
                                     
                                         key:    LogoXPosition
                                         value:  a number (float or integer) specifying the horizontal position of
-                                                the logo image in percent (%). Starting with 0% at the left side
-                                                of the background and ending with 100% at the right side. This
+                                                the logo image in percent (%). Starting with 0 percent at the left side
+                                                of the background and ending with 100 percent at the right side. This
                                                 optional key allows you to specify an initial horizontal position
                                                 for the logo image.
                                     
@@ -234,8 +234,8 @@
                                     
                                         key:    LogoYPosition
                                         value:  a number (float or integer) specifying the vertical position of the logo
-                                                image in percent (%). Starting with 0% at the bottom of the background
-                                                and ending with 100% at the top. This optional key allows you to specify
+                                                image in percent (%). Starting with 0 percent at the bottom of the background
+                                                and ending with 100 percent at the top. This optional key allows you to specify
                                                 an initial vertical position for the logo image.
                                 
                                         key:    LogoYPositionLocked

@@ -1,6 +1,6 @@
 /*
      MTGradientPickerView.m
-     Copyright 2022-2024 SAP SE
+     Copyright 2022-2026 SAP SE
      
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -274,7 +274,8 @@
     }
 }
 
-#pragma mark undo/redo stuff
+#pragma mark - undo/redo stuff
+
 - (void)addColor:(NSColor*)color atLocation:(CGFloat)location
 {
     CGFloat colorWellLocation = NSWidth([_colorWellContainer frame]) * location;
